@@ -5,13 +5,13 @@ tagline: Alistair's GitHub IO
 email: alistair@alistair23.me
 description: >
   A collection of pages written by me
-baseurl: "/"
+baseurl: ""
 url: "https://alistair23.github.io"
 permalink: pretty
 #favicon: /path/to/favicon.png
 #gh_sponsor: alistair23
 remote_theme: chrisrhymes/bulma-clean-theme
-#hide_share_buttons: true
+hide_share_buttons: true
 #theme_color: '#eeeeee'
 #fixed_navbar: top
 #direction: one of <ltr, rtl, auto>, default: ltr
@@ -50,8 +50,6 @@ sass:
   style: compressed
   source_dir: _sass
 
-#google_analytics: UA-code-here
-
 defaults:
   -
     scope:
@@ -66,7 +64,6 @@ defaults:
     values:
       author: "Alistair"
       layout: post
-      image: https://via.placeholder.com/1200x800
       show_sidebar: true
 
 markdown: kramdown
