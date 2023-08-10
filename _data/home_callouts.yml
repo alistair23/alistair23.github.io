@@ -1,0 +1,11 @@
+style: is-light
+items:
+  - title: Embedded Systems
+    subtitle: Including embedded C, embedded Rust and OpenEmbedded
+    icon: fa-microchip
+  - title: RISC-V
+    subtitle: QEMU RISC-V Maintainer
+    icon: fa-laptop
+  - title: Linux
+    subtitle: Librem5 and reMarkable2
+    icon: fa-linux
