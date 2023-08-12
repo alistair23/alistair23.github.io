@@ -17,11 +17,11 @@ This is a guide on running Tock and RadioLib on a SparkFun expLoRaBLE Thing Plus
 LoRa (Long Range) is a radio communication technique that uses spread spectrum modulation technique derived from chirp spread spectrum (CSS) technology.
 
 LoRa provides a number of properties including:
- * long range, can cover tens of kilometers
+ * long range, can cover tens of kilometres
  * low power, devices can run for years
- * resonably secure
+ * reasonably secure
  * standardised
- * realativley cheap
+ * relativity cheap
 
 ## SparkFun expLoRaBLE Thing Plus
 
@@ -29,7 +29,7 @@ The [SparkFun expLoRaBLE Thing Plus](https://www.sparkfun.com/products/17506) is
 
 ## Tock
 
-[Tock](https://github.com/tock/tock) is an embedded operating system (OS) written in Rust. It is designed for running multiple concurrent, mutually distrustful applications on Cortex-M and RISC-V based embedded platforms. Tock's design centers around protection, both from potentially malicious applications and from device drivers.
+[Tock](https://github.com/tock/tock) is an embedded operating system (OS) written in Rust. It is designed for running multiple concurrent, mutually distrustful applications on Cortex-M and RISC-V based embedded platforms. Tock's design centres around protection, both from potentially malicious applications and from device drivers.
 
 Tock has support for the Ambiq Apollo3 microcontroller and the SparkFun expLoRaBLE Thing Plus. Using these and RadioLib we can run a LoRa application
 
@@ -47,12 +47,12 @@ For the communication we need two boards, one to send data and one to receive. W
 
  * [SparkFun LoRa Thing Plus - expLoRaBLE](https://www.sparkfun.com/products/17506)
  * [Antenna](https://www.sparkfun.com/products/17841)
- * [Enviroment Monitor](https://www.sparkfun.com/products/14348) (the base [BME280](https://www.sparkfun.com/products/15440) should also work)
+ * [Environment Monitor](https://www.sparkfun.com/products/14348) (the base [BME280](https://www.sparkfun.com/products/15440) should also work)
  * [Qwiic cable](https://www.sparkfun.com/products/15081)
 
 You can connect the sensor to the board using Qwiic cables
 
-### Reviever
+### Receiver
 
  * [SparkFun LoRa Thing Plus - expLoRaBLE](https://www.sparkfun.com/products/17506)
  * [Antenna](https://www.sparkfun.com/products/17841)
@@ -189,7 +189,7 @@ That's it! Now your board is running Tock and an application. You can see it run
 ```shell
 screen /dev/ttyUSB2 115200
 ```
-## Flashing the reciever
+## Flashing the receiver
 
 You can now unplug your transmitter.
 
@@ -201,7 +201,7 @@ This is exactly the same as above.
 
 ### RadioLib
 
-This is also exactly the same, except we want to change main.cpp to recieve data in a loop. So replace main.cpp with this
+This is also exactly the same, except we want to change main.cpp to receive data in a loop. So replace main.cpp with this
 
 ```c
 /*
@@ -280,8 +280,8 @@ NOTE: If it's easier you can use this [main.cpp](https://github.com/alistair23/R
 
 ## Send some data
 
-That's it! One board is now transmitting data over LoRa and another is recieving data. You can move the boards around and read what is happening over the serial console.
+That's it! One board is now transmitting data over LoRa and another is receiving data. You can move the boards around and read what is happening over the serial console.
 
-You can power the sender device from a USB power bank, leave it in the backyard and then read the information from the reciever plugged into your computer.
+You can power the sender device from a USB power bank, leave it in the backyard and then read the information from the receiver plugged into your computer.
 
 Hopefully you can follow the above steps. If you have any issues just raise an issue at: https://github.com/alistair23/alistair23.github.io
