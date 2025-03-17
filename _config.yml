@@ -10,7 +10,7 @@ url: "https://www.alistair23.me"
 permalink: pretty
 #favicon: /path/to/favicon.png
 #gh_sponsor: alistair23
-remote_theme: chrisrhymes/bulma-clean-theme
+remote_theme: chrisrhymes/bulma-clean-theme@v0.14.0
 hide_share_buttons: true
 #theme_color: '#eeeeee'
 #fixed_navbar: top

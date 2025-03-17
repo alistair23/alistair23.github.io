@@ -3,10 +3,6 @@
 source "https://rubygems.org"
 gemspec
 
-gem 'commonmarker'
-
-gem 'github-pages', group: :jekyll_plugins
-
 group :jekyll_plugins do
     gem "jekyll-feed", "~> 0.6"
     gem "jekyll-sitemap"
@@ -14,7 +10,7 @@ group :jekyll_plugins do
     gem "jekyll-seo-tag"
     gem 'jekyll-redirect-from'
     gem 'commonmarker'
+    gem 'github-pages'
 end
 
-
-gem "webrick", "~> 1.8"
+gem "webrick"
